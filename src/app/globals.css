@@ -1,0 +1,34 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* From DESIGN.md — Architectural Lens palette */
+  --surface: #f7f9fb;
+  --surface-container: #eceef0;
+  --surface-container-low: #f2f4f6;
+  --on-surface: #191c1e;
+  --on-surface-variant: #45474e;
+  --primary: #0f1f3d;
+  --on-primary: #ffffff;
+  --secondary: #006b58;
+  --outline: #75777e;
+  --outline-variant: #c5c6ce;
+  --error: #ba1a1a;
+  --font-sans: 'IBM Plex Sans', sans-serif;
+  --font-mono: 'IBM Plex Mono', monospace;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: var(--surface);
+  color: var(--on-surface);
+}
+
+/* Technical data (scores, IDs, timestamps) use monospace */
+.data-mono {
+  font-family: var(--font-mono);
+  letter-spacing: 0.02em;
+}
